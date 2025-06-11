@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+}
+
+.toolbox {
+    background: #2e8b8b;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.toolbox select,
+.toolbox button,
+.toolbox input[type="file"],
+.toolbox input[type="color"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.toolbox button {
+    background-color: white;
+    color: #2e8b8b;
+    font-weight: bold;
+}
+
+.toolbox button:hover {
+    background-color: #ddd;
+}
+
+.toolbox-icon-button {
+    background-color: white;
+    color: #2e8b8b;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.toolbox-icon-button:hover {
+    background-color: #ddd;
+}
+
+.spreadsheet {
+    display: grid;
+    grid-template-columns: 40px repeat(20, 100px);
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cell,
+.header {
+    border: 1px solid #ccc;
+    padding: 6px;
+    box-sizing: border-box;
+    min-height: 24px;
+}
+
+.header {
+    background: #edf2f7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cell[contenteditable] {
+    background: #fff;
+    outline: none;
+}
+
+.row-header {
+    grid-column: 1;
+    background: #edf2f7;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sheet-container {
+    padding: 10px;
+}
+
+.new-sheet-btn {
+    background-color: #fff;
+    color: #2e8b8b;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #2e8b8b;
+}
+
+.new-sheet-btn:hover {
+    background-color: #2e8b8b;
+    color: white;
+}
